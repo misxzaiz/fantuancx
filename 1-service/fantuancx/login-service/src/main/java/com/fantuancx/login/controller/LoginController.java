@@ -1,17 +1,16 @@
 package com.fantuancx.login.controller;
 
-import com.auth0.jwt.JWT;
-import com.auth0.jwt.JWTCreator;
-import com.auth0.jwt.algorithms.Algorithm;
 import com.fantuancx.api.common.R;
 import com.fantuancx.api.pojo.User;
+import com.fantuancx.jwt.common.GetSetJWT;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 @Slf4j
 @RestController
@@ -22,13 +21,10 @@ public class LoginController {
         log.info("User:{}",user);
         if(user.getUsername().equals("fantuan") && user.getPassword().equals("1234")){
             // 获取 JWT 令牌
-            Calendar instance = Calendar.getInstance();
-            instance.add(Calendar.DATE, 7);
-            JWTCreator.Builder builder = JWT.create();
-            builder.withClaim("username",user.getUsername())
-                    .withClaim("password",user.getPassword());
-            String jwt = builder.withExpiresAt(instance.getTime())
-                    .sign(Algorithm.HMAC256("fantuan"));
+            Map<String,Object> map = new HashMap<>();
+            map.put("username",user.getUsername());
+            map.put("password",user.getPassword());
+            String jwt = GetSetJWT.setJWT(7,map);
             log.info("JWT:{}",jwt);
             return R.success(jwt,"登录成功！");
         }

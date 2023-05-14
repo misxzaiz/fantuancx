@@ -20,6 +20,8 @@
         <module>demo</module>
         <module>login-service</module>
         <module>feign-api</module>
+        <module>jwt-api</module>
+        <module>user-service</module>
     </modules>
 
     <properties>

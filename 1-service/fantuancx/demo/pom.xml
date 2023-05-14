@@ -28,11 +28,7 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
-        <dependency>
-            <groupId>in.yajnesh.util</groupId>
-            <artifactId>java-util</artifactId>
-            <version>1.0.0</version>
-        </dependency>
+
     </dependencies>
 
 </project>
