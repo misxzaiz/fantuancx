@@ -14,3 +14,7 @@ spring:
           uri: lb://demo
           predicates:
             - Path=/demo/**
+        - id: loginservice
+          uri: lb://loginservice
+          predicates:
+            - Path=/login/**

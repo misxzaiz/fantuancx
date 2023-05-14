@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/element.css"/>
+    <script src="static/js/vue@3.js"></script>
+    <script src="static/js/element-plus.js"></script>
+    <script src="static/js/axios.min.js"></script>
+    <script src="global.js"></script>
+
+</head>
+<body>
+
+    <div id="app">
+        Demo
+    </div>
+
+    <script>
+        const App = {
+            data() {
+                return {
+
+                }
+            },
+            mounted() {  
+                console.log(window.uri)
+                // 禁止直接跳转
+                const token = localStorage.getItem('token');
+                if(token==='null' || token === null){
+                    window.location.href='pages/login/index.html';
+                }
+            },
+            methods: {
+ 
+            }
+        };
+        const app = Vue.createApp(App);
+        app.use(ElementPlus);
+        app.mount("#app")
+    </script>
+</body>
+</html>

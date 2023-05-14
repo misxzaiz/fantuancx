@@ -19,6 +19,7 @@
         <module>gateway</module>
         <module>demo</module>
         <module>login-service</module>
+        <module>feign-api</module>
     </modules>
 
     <properties>
@@ -52,6 +53,11 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>in.yajnesh.util</groupId>
+            <artifactId>java-util</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 
