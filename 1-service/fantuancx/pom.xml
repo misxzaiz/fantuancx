@@ -22,6 +22,7 @@
         <module>feign-api</module>
         <module>jwt-api</module>
         <module>user-service</module>
+        <module>markdown-service</module>
     </modules>
 
     <properties>

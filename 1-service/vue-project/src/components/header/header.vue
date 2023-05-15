@@ -19,6 +19,7 @@
     <el-menu-item index="3" @click="demo">Demo</el-menu-item>
     <el-menu-item index="4" @click="router('/controller')">控制台</el-menu-item>
   </el-menu>
+
 </template>
 
 

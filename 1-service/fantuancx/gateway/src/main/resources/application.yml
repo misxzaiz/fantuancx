@@ -22,3 +22,7 @@ spring:
           uri: lb://loginservice
           predicates:
             - Path=/login/**
+        - id: markdownservice
+          uri: lb://markdownservice
+          predicates:
+            - Path=/content/**

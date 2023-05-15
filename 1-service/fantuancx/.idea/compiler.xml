@@ -12,6 +12,7 @@
         <module name="demo" />
         <module name="gateway" />
         <module name="feign-api" />
+        <module name="markdown-service" />
       </profile>
     </annotationProcessing>
   </component>
@@ -22,6 +23,7 @@
       <module name="gateway" options="-parameters" />
       <module name="jwt-api" options="-parameters" />
       <module name="login-service" options="-parameters" />
+      <module name="markdown-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>

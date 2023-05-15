@@ -1,0 +1,17 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: markdownservice
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 # nacos 服务地址
+        cluster-name: HZ
+
+logging:
+  level:
+    org.example: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
