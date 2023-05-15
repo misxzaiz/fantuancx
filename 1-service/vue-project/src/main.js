@@ -1,4 +1,4 @@
-import './assets/main.css'
+
 
 import { createApp } from 'vue'
 import ElementPlus from 'element-plus'
@@ -15,4 +15,4 @@ app.use(router)
 
 app.mount('#app')
 
-window.$uriReq = 'http://127.0.0.1:81'
+window.$uriReq = 'http://10.60.113.69:81'

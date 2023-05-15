@@ -2,11 +2,10 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 import Index from '../views/index.vue'
 import Login from '../views/login.vue'
-import Test from '../views/test.vue'
+import Test from '../template/test.vue'
 
 import Controller from '../views/controller/controller.vue'
 import ControllerUser from '../views/controller/user/user.vue'
-
 
 
 const routes = [

@@ -1,26 +1,28 @@
-<template>
-  <dir>
-    <el-button type="primary" @click="router('/login')">登录</el-button>
-    <el-button type="primary" @click="logout">注销</el-button>
-    <el-button type="primary" @click="router('/controller')">控制台</el-button>
-  </dir>
+<style>
 
+</style>
+
+<template>
+  <Header></Header>
 </template>
 
+
 <script type="text/ecmascript-6">
+
+  import Header from '../components/header/header.vue'
+
+
   export default {
     data() {
       return {
 
       };
     },
+    components: {
+      Header
+    },
     methods: {
-        router(uri) {
-            this.$router.push(uri)
-        },
-        logout() {
-          localStorage.removeItem('token');
-        }
+
     },
   };
 </script>

@@ -1,11 +1,11 @@
 package com.fantuancx.user.controller;
 
-
 import com.fantuancx.api.common.R;
 import com.fantuancx.user.pojo.User;
 import com.fantuancx.user.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DuplicateKeyException;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -32,25 +32,43 @@ public class UserController {
 
     @PutMapping
     public R<String> updateUser(@RequestBody User user){
-        log.info("user:{}",user);
-
-        boolean update = userService.updateById(user);
-        if (update){
-            return R.success("更新成功！");
+        try {
+            log.info("更新：user:{}",user);
+            boolean update = userService.updateById(user);
+            if (update){
+                return R.success("添加成功！");
+            }
+            return R.fail("添加失败！");
+        } catch (DuplicateKeyException e) {
+            return R.fail("用户名已存在！");
+        } catch (Exception e) {
+            return R.fail("添加失败！");
         }
-        return R.fail("更新失败！");
     }
 
     @PostMapping
     public R<String> saveUser(@RequestBody User user){
-        log.info("user:{}",user);
-
-        boolean save = userService.save(user);
-        if (save){
-            return R.success("添加成功！");
+        try {
+            log.info("新增：user:{}",user);
+            boolean save = userService.save(user);
+            if (save){
+                return R.success("添加成功！");
+            }
+            return R.fail("添加失败！");
+        } catch (DuplicateKeyException e) {
+            return R.fail("用户名已存在！");
+        } catch (Exception e) {
+            return R.fail("添加失败！");
         }
-        return R.fail("添加失败！");
     }
 
-
+    @DeleteMapping("{id}")
+    public R<String> deleteUserById(@PathVariable Long id){
+        log.info("删除用户！{}",id);
+        boolean mark = userService.removeById(id);
+        if(mark){
+            return R.success("删除成功！");
+        }
+        return R.fail("删除失败！");
+    }
 }
