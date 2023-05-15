@@ -1,33 +1,63 @@
 <template>
     <div>
-      <form @submit.prevent="handleSubmit">
-        <div>
-          <label for="username">用户名：</label>
-          <input type="text" id="username" v-model="username" />
-        </div>
-        <div>
-          <label for="password">密码：</label>
-          <input type="password" id="password" v-model="password" />
-        </div>
-        <button type="submit">登录</button>
-      </form>
+      <el-form :model="form" ref="form" :rules="rules" label-width="80px" class="login">
+        <el-form-item label="账号" prop="username">
+            <el-input v-model="form.username"></el-input>
+        </el-form-item>
+        <el-form-item label="密码" prop="password">
+            <el-input type="password" v-model="form.password"></el-input>
+        </el-form-item>
+        <el-form-item>
+            <el-button type="primary" @click="login">登录</el-button>
+            <el-button type="primary" @click="register" disabled>注册</el-button>
+        </el-form-item>
+    </el-form>
     </div>
-  </template>
+</template>
   
-  <script lang="ts">
+<script type="text/ecmascript-6">
+  import axios from 'axios'
+
   export default {
     data() {
       return {
-        username: '',
-        password: '',
+        form: {
+          username: '',
+          password: ''
+        },
+        rules: {
+          username: [{required: true, message: '请输入账号！', trigger: 'blur'}],
+          password: [{required: true, message: '请输入密码！', trigger: 'blur'}]
+        }
       };
     },
     methods: {
-      handleSubmit() {
-        // 在这里可以进行登录验证的逻辑
-        console.log('username:', this.username);
-        console.log('password:', this.password);
+      login() {  
+        
+        axios.post(window.$uriReq + '/login',this.form)
+        .then(res => {
+          if(res.data.code === 200){
+            localStorage.setItem("token",res.data.data);
+            this.$message({
+              message: res.data.message,
+              type: 'success'
+            })
+            this.$router.push('/')
+          }else{
+            this.$message({
+              message: res.data.message,
+              type: 'error'
+            })
+          }
+        })
+        .catch(error => {
+          this.$message({
+              message: error,
+              type: 'error'
+          })   
+        })
       },
+      register(){}
     },
   };
   </script>

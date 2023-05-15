@@ -7,12 +7,7 @@ import App from './App.vue'
 import router from './router/index'
 
 
-
-
 const app = createApp(App)
 app.use(ElementPlus)
 app.use(router)
-
 app.mount('#app')
-
-window.$uriReq = 'http://127.0.0.1:81'

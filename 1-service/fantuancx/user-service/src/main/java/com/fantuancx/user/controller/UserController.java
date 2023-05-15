@@ -30,7 +30,7 @@ public class UserController {
         return R.success(userService.list(),"用户信息！");
     }
 
-    @PostMapping
+    @PutMapping
     public R<String> updateUser(@RequestBody User user){
         log.info("user:{}",user);
 
@@ -38,9 +38,18 @@ public class UserController {
         if (update){
             return R.success("更新成功！");
         }
-        return R.fail("添加/更新失败！");
+        return R.fail("更新失败！");
+    }
 
+    @PostMapping
+    public R<String> saveUser(@RequestBody User user){
+        log.info("user:{}",user);
 
+        boolean save = userService.save(user);
+        if (save){
+            return R.success("添加成功！");
+        }
+        return R.fail("添加失败！");
     }
 
 
