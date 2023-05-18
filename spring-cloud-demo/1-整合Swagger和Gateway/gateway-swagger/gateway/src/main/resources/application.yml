@@ -1,0 +1,26 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: gateway # 服务名称
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 # nacos 地址
+    gateway:
+      routes:
+        - id: demo1-service
+          uri: lb://demo1-service
+          predicates:
+            - Path=/demo1/**
+          filters:
+            # 去掉路由前缀，访问 localhost：8088/test/v2/api 转发的就是 localhost:8089/v2/api
+            # 1 : 代表剥离路径的个数
+            - StripPrefix=1
+        - id: demo2-service
+          uri: lb://demo2-service
+          predicates:
+            - Path=/demo2/**
+          filters:
+            - StripPrefix=1

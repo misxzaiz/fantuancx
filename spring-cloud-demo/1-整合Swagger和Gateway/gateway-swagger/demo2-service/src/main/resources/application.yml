@@ -1,0 +1,11 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: demo2-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 # nacos 服务地址
+        cluster-name: SZ
