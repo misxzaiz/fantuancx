@@ -3,27 +3,40 @@
 </style>
 
 <template>
-  <Content :name="'2023-03-25-微信小程序实战.md'"></Content>
+    <Header></Header>
+    
+    <el-row :gutter="20">
+        <el-col :span="4"></el-col>
+        <el-col :span="16"><Content :name="name"></Content></el-col>
+        <el-col :span="4"></el-col>
+      </el-row>
 </template>
 
 
 <script type="text/ecmascript-6">
 
+    import Header from '../header/header.vue'
+    import Content from './content.vue'
+    
 
-  import Content from './content.vue'
 
+    export default {
 
-  export default {
-    data() {
-      return {
+        data() {
+            return {
+                name: this.$route.query.name
+            };
+        },
+        components: {
+            Header,
+            Content
+        },
+        mounted() {
+            // 通过路由传递参数
+            // this.data.name = this.$route.query.name
+        },
+        methods: {
 
-      };
-    },
-    components: {
-      Content
-    },
-    methods: {
-
-    },
-  };
+        },
+    };
 </script>

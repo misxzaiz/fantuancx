@@ -2,12 +2,14 @@ package com.fantuancx.user.controller;
 
 import com.fantuancx.api.common.R;
 import com.fantuancx.user.pojo.User;
+import com.fantuancx.user.pojo.UserReq;
 import com.fantuancx.user.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
@@ -25,9 +27,15 @@ public class UserController {
     }
 
     @GetMapping
-    public R<List<User>> getUserList(){
+    public R<List<UserReq>> getUserList(){
         log.info("查询用户信息！");
-        return R.success(userService.list(),"用户信息！");
+        List<User> users = userService.list();
+        List<UserReq> userReqs = new ArrayList<>();
+        for(User user : users){
+            // 格式化时间
+            userReqs.add(new UserReq(user));
+        }
+        return R.success(userReqs,"用户信息！");
     }
 
     @PutMapping
@@ -66,6 +74,16 @@ public class UserController {
     public R<String> deleteUserById(@PathVariable Long id){
         log.info("删除用户！{}",id);
         boolean mark = userService.removeById(id);
+        if(mark){
+            return R.success("删除成功！");
+        }
+        return R.fail("删除失败！");
+    }
+
+    @PostMapping("/batch-delete")
+    public R<String> batchDelete(@RequestBody List<Long> ids) {
+        log.info("删除用户！{}",ids);
+        boolean mark = userService.removeBatchByIds(ids);
         if(mark){
             return R.success("删除成功！");
         }

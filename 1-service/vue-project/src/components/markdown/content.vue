@@ -1,5 +1,12 @@
 <style>
 
+  pre {
+    background: #000;
+    overflow: auto;
+  }
+  code {
+    color: #fff;
+  }
 </style>
 
 <template>

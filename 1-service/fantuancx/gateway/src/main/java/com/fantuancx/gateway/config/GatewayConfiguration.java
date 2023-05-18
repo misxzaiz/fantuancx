@@ -12,7 +12,7 @@ public class GatewayConfiguration {
     @Bean
     public CorsWebFilter corsWebFilter() {
         CorsConfiguration corsConfig = new CorsConfiguration();
-        corsConfig.addAllowedOrigin("*"); // 允许来自任何来源的请求
+        corsConfig.addAllowedOrigin("http://localhost:5173"); // 允许来自任何来源的请求
         corsConfig.addAllowedMethod("*"); // 允许使用任何HTTP方法
         corsConfig.addAllowedHeader("*"); // 允许任何请求头
 

@@ -14,10 +14,16 @@
   <el-menu :default-active="activeIndex" class="el-menu-demo el-menu" mode="horizontal" :ellipsis="false" @select="handleSelect" >
     <el-menu-item index="0" @click="router('/')" class="el-menu-logo">Fantuan</el-menu-item>
     <div class="flex-grow"/>
-    <el-menu-item index="1" @click="router('/login')">登录</el-menu-item>
-    <el-menu-item index="2" @click="logout">注销</el-menu-item>
-    <el-menu-item index="3" @click="demo">Demo</el-menu-item>
-    <el-menu-item index="4" @click="router('/controller')">控制台</el-menu-item>
+
+    <el-sub-menu index="1">
+        <template #title>工作台</template>
+        <el-menu-item index="1-1" @click="router('/login')">登录</el-menu-item>
+        <el-menu-item index="1-2" @click="logout">注销</el-menu-item>
+        <el-menu-item index="1-3" @click="demo">Demo</el-menu-item>
+        <el-menu-item index="1-4" @click="router('/controller')">控制台</el-menu-item>
+    </el-sub-menu>
+
+
   </el-menu>
 
 </template>

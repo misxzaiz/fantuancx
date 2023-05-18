@@ -24,7 +24,8 @@ public class GatewayFilter implements GlobalFilter {
         // 1. 通过 request 获取请求参数
         ServerHttpRequest request = exchange.getRequest();
         // 2. 放行登录请求
-        if(request.getURI().getPath().equals("/login")){
+        String uriReq = request.getURI().getPath();
+        if(uriReq.equals("/login")){
             return chain.filter(exchange);
         }else{
             // 3. 通过 gateway 获取请求头的 token

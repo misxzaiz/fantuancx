@@ -3,16 +3,21 @@
 </style>
 
 <template>
+
   <Header></Header>
-  <ArticleList></ArticleList>
-  <Content :name="'2023-03-25-微信小程序实战.md'"></Content>
+
+  <el-row :gutter="20">
+    <el-col :span="4"></el-col>
+    <el-col :span="16"><ArticleList></ArticleList></el-col>
+    <el-col :span="4"></el-col>
+  </el-row>
+
 </template>
 
 
 <script type="text/ecmascript-6">
 
   import Header from '../components/header/header.vue'
-  import Content from '../components/markdown/content.vue'
   import ArticleList from '../components/markdown/articleList.vue'
 
   export default {
@@ -23,7 +28,6 @@
     },
     components: {
       Header,
-      Content,
       ArticleList
     },
     methods: {

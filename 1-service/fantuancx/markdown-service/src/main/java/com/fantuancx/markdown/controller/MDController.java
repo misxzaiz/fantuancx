@@ -1,5 +1,6 @@
 package com.fantuancx.markdown.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,12 +12,14 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+@Slf4j
 @RestController
 @RequestMapping("content")
 public class MDController {
 
     @GetMapping("{name}")
     public String getContent(@PathVariable String name) {
+        log.info("name:{}",name);
         // 获取Markdown文件的路径（示例）
         Path path = Paths.get("C:\\Users\\28409\\Desktop\\misxzaiz.github.io\\note\\"+name);
         // 读取Markdown文件内容
