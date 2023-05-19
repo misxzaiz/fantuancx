@@ -4,12 +4,11 @@
 
 <template>
     <Header></Header>
-    
     <el-row :gutter="20">
         <el-col :span="4"></el-col>
         <el-col :span="16"><Content :name="name"></Content></el-col>
         <el-col :span="4"></el-col>
-      </el-row>
+    </el-row>
 </template>
 
 
@@ -30,13 +29,6 @@
         components: {
             Header,
             Content
-        },
-        mounted() {
-            // 通过路由传递参数
-            // this.data.name = this.$route.query.name
-        },
-        methods: {
-
-        },
+        }
     };
 </script>

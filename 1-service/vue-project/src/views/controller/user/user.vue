@@ -12,6 +12,8 @@
 </style>
 
 <template>
+    <!-- <Page></Page> -->
+    <!-- <Demo></Demo> -->
     <div class="user-container">
         <!-- 添加/批量删除用户 -->
         <div class="user-nav">
@@ -41,6 +43,12 @@
                     </template> 
                 </el-table-column>
             </el-table>
+            <el-pagination 
+                layout="prev, pager, next"  
+                :current-page="currentPage"
+                :page-count="pages" 
+                @current-change="getCurrentPage"
+                />
         </div>
         <!-- 添加、删除、更新用户对话框 -->
         <div>
@@ -71,17 +79,20 @@
             </el-dialog>
         </div>
     </div>
-
 </template>
   
 <script type="text/ecmascript-6">
 
     import axios from 'axios'
+    import Page from './page.vue'
+    import Demo from './demo.vue'
 
     export default {
         data() {
             return {
                 users: [],
+                currentPage: 1,
+                pages: 100,
                 dialogVisible: false,
                 dialogTitle: '',
                 userForm: {},
@@ -94,41 +105,31 @@
                         'Authorization': 'headers.Authorization.token'
                     }
                 },
-
             };
         },
         components: {
-
+            Page,
+            Demo
         },
         mounted() {  
             // 获取 token
             this.headers.headers.Authorization = localStorage.getItem('token')
-            this.getUser() // 获取用户列表
+            // 获取第一页数据
+            this.getCurrentPage(this.currentPage)
         },
         methods: {
-            // 获取用户列表
-            getUser(){
-                axios.get(window.$uriReq+'/user',this.headers)
-                .then(res => {
-                    this.users = res.data.data
-                    console.log(res.data.data)
+            // 获取当前页数据
+            getCurrentPage(currentPage){
+                axios.get(window.$uriReq+'/userservice/user/pages/' + currentPage,this.headers)
+                .then(response => {
+                    this.users = response.data.data.users
+                    // 注意类型
+                    this.pages = parseInt(response.data.data.pages)
+                    this.currentPage = currentPage
                 })
-            },
-            // 处理正确响应结果
-            res(res) {
-                if(res.data.code === 200 ){
-                    this.dialogVisible = false;
-                    this.$message({
-                        message: res.data.message,
-                        type: 'success'
-                    })
-                    this.getUser()
-                }else {
-                    this.$message({
-                        message: res.data.message,
-                        type: 'error'
-                    })                        
-                }
+                .catch(error => {
+                    console.log(error)
+                })
             },
             // 更新多选的数据
             handleSelectionChange(selectionRows) {
@@ -149,7 +150,7 @@
                     // 获取 token
                     const token = localStorage.getItem('token');
                     // 发送删除请求到 /user/batch-delete 接口
-                    axios.post(window.$uriReq+'/user/batch-delete', 
+                    axios.post(window.$uriReq+'/userservice/user/batch-delete', 
                         ids
                         , {
                             headers: {
@@ -159,8 +160,8 @@
                             // 如果成功则更新表格数据
                             this.users = this.users.filter(user => !ids.includes(user.id));
                             this.selectedRows = [];
-
                             this.$message.success('删除成功');
+                            this.getCurrentPage(this.currentPage)
                         }).catch(() => {
                             // 如果失败则给出提示信息
                             this.$message.error('删除失败，请稍后重试');
@@ -201,7 +202,7 @@
             },
             // 保存用户
             saveUser() {
-                const url = window.$uriReq + '/user';
+                const url = window.$uriReq + '/userservice/user';
                 axios.post(url, this.userForm, this.headers )
                 .then(res => {
                     this.res(res)
@@ -212,25 +213,41 @@
             // 更新用户信息
             updateUser() {
                 console.log(this.headers)
-                const url = window.$uriReq + '/user';
-                const token = localStorage.getItem('token');
+                const url = window.$uriReq + '/userservice/user';
                 axios.put(url, this.userForm, this.headers )
                 .then(res => {
                     this.res(res)
                 }).catch(error => {
+                    alert(error)
                     this.dialogVisible = false;
                 })
             },
             // 删除用户
             deleteUser() {
-                const url = window.$uriReq + '/user/'+this.userForm.id;
+                const url = window.$uriReq + '/userservice/user/'+this.userForm.id;
                 axios.delete(url,  this.headers)
                 .then(res => {
                     this.res(res)
                 }).catch(error => {
                     this.dialogVisible = false;
                 })
-            }
+            },
+            // 处理正确响应结果
+            res(res) {
+                if(res.data.code === 200 ){
+                    this.dialogVisible = false;
+                    this.$message({
+                        message: res.data.message,
+                        type: 'success'
+                    })
+                    this.getCurrentPage(this.currentPage)
+                }else {
+                    this.$message({
+                        message: res.data.message,
+                        type: 'error'
+                    })                        
+                }
+            },
         }
     };
 </script>

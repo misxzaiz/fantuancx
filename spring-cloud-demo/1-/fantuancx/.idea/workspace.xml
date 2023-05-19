@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8f93b9ab-e59d-4b4b-82c6-e1276297a9e3" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/conf/fastcgi.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/conf/fastcgi_params" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/conf/koi-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/conf/koi-win" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/conf/mime.types" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/conf/nginx.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/conf/scgi_params" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/conf/uwsgi_params" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/conf/win-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/contrib/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/contrib/geo2nginx.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/contrib/unicode2nginx/koi-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/contrib/unicode2nginx/unicode-to-nginx.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/contrib/unicode2nginx/win-utf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/contrib/vim/ftdetect/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/contrib/vim/ftplugin/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/contrib/vim/indent/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/contrib/vim/syntax/nginx.vim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/docs/CHANGES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/docs/CHANGES.ru" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/docs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/docs/OpenSSL.LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/docs/PCRE.LICENCE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/docs/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/docs/zlib.LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/pages/controller/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/pages/controller/user/demo1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/pages/controller/user/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/pages/controller/user/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/pages/login/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/pages/login/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/pages/template/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/static/css/element-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/static/css/element.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/static/image/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/static/image/666.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/static/image/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/static/image/bg.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/static/js/axios.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/static/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/static/js/element-plus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/static/js/element-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/static/js/vue-router.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/static/js/vue@3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/html/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/logs/access.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/logs/error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/logs/nginx.pid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/nginx.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/start.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../nginx-1.24.0/start.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../windows_amd64.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../windows_amd64/Sunny-Ngrok启动工具.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../windows_amd64/sunny.exe" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-core/2.9.2/springfox-core-2.9.2.jar!/springfox/documentation/service/ApiInfo.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/ApiSelectorBuilder.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.15.RELEASE/spring-core-5.2.15.RELEASE.jar!/org/springframework/lang/Nullable.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.15.RELEASE/spring-web-5.2.15.RELEASE-sources.jar!/org/springframework/web/cors/CorsConfiguration.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Users\28409\.m2\repository" />
+        <option name="userSettingsFile" value="C:\Users\28409\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Pk2CuyJEuTe3mmBwA3DFXLfKSX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
+    "jdk.selected.JAVA_MODULE": "corretto-1.8",
+    "last_opened_file_path": "C:/Users/28409/Desktop/fantauncx/fantuancx/1-service/fantuancx/gateway/src/main/resources/static",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "db5fa55ecfe88905026007663b5313af",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\28409\Desktop\fantauncx\fantuancx\1-service\fantuancx\gateway\src\main\resources\static" />
+      <recent name="C:\Users\28409\Desktop\fantauncx\fantuancx\1-service\fantuancx\markdown-service\src\main\resources" />
+      <recent name="C:\Users\28409\Desktop\fantauncx\fantuancx\1-service\fantuancx\user-service\src\main\java\com\fantuancx\user" />
+      <recent name="C:\Users\28409\Desktop\fantauncx\fantuancx\1-service\fantuancx\user-service\src\main\resources" />
+      <recent name="C:\Users\28409\Desktop\fantauncx\fantuancx\1-service\fantuancx\login-service\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.fantuancx.gateway.config" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DemoApplication">
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fantuancx.demo.DemoApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fantuancx.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="login-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fantuancx.login.LoginApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fantuancx.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MDApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="markdown-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fantuancx.markdown.MDApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fantuancx.markdown.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fantuancx.user.UserApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fantuancx.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <additionalParameters>
+        <param>
+          <option name="enabled" value="true" />
+          <option name="name" value="server.port" />
+          <option name="value" value="8084" />
+        </param>
+      </additionalParameters>
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fantuancx.user.UserApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fantuancx.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.UserApplication2" />
+        <item itemvalue="Spring Boot.UserApplication" />
+        <item itemvalue="Spring Boot.DemoApplication" />
+        <item itemvalue="Spring Boot.MDApplication" />
+        <item itemvalue="Spring Boot.LoginApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="8f93b9ab-e59d-4b4b-82c6-e1276297a9e3" name="变更" comment="" />
+      <created>1683986635727</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683986635727</updated>
+      <workItem from="1683986636862" duration="6296000" />
+      <workItem from="1684028775749" duration="27312000" />
+      <workItem from="1684076672136" duration="7677000" />
+      <workItem from="1684127801132" duration="21305000" />
+      <workItem from="1684307712362" duration="9346000" />
+      <workItem from="1684327889322" duration="4410000" />
+      <workItem from="1684334915375" duration="6513000" />
+      <workItem from="1684398665232" duration="13000" />
+      <workItem from="1684398716131" duration="5518000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../../.." />
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

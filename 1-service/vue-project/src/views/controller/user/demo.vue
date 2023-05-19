@@ -41,6 +41,8 @@
                     </template> 
                 </el-table-column>
             </el-table>
+            <el-pagination layout="prev, pager, next"  :page-count="pages" @current-change="getCurrentPage"/>
+            <!-- <el-pagination @current-change="getCurrentPage" :current-page="currentPage" :page-sizes="[5, 10, 20]" :page-size="pageSize" :total="total"></el-pagination> -->
         </div>
         <!-- 添加、删除、更新用户对话框 -->
         <div>
@@ -82,6 +84,8 @@
         data() {
             return {
                 users: [],
+                currentPage: 1,
+                pages: 100,
                 dialogVisible: false,
                 dialogTitle: '',
                 userForm: {},
@@ -103,12 +107,24 @@
         mounted() {  
             // 获取 token
             this.headers.headers.Authorization = localStorage.getItem('token')
-            this.getUser() // 获取用户列表
+            //this.getUser() // 获取用户列表
+            this.currentPage = 1
+            axios.get(window.$uriReq+'/userservice/user/pages/' + this.currentPage,this.headers)
+            .then(response => {
+                this.users = response.data.data.users
+                this.pages = response.data.data.pages
+            })
+            .catch(error => {
+                console.log(error)
+            })
         },
         methods: {
+            getCurrentPage(value){
+                console.log(this.currentPage+value)
+            },
             // 获取用户列表
             getUser(){
-                axios.get(window.$uriReq+'/user',this.headers)
+                axios.get(window.$uriReq+'/userservice/user',this.headers)
                 .then(res => {
                     this.users = res.data.data
                     console.log(res.data.data)
@@ -149,7 +165,7 @@
                     // 获取 token
                     const token = localStorage.getItem('token');
                     // 发送删除请求到 /user/batch-delete 接口
-                    axios.post(window.$uriReq+'/user/batch-delete', 
+                    axios.post(window.$uriReq+'/userservice/user/batch-delete', 
                         ids
                         , {
                             headers: {
@@ -201,7 +217,7 @@
             },
             // 保存用户
             saveUser() {
-                const url = window.$uriReq + '/user';
+                const url = window.$uriReq + '/userservice/user';
                 axios.post(url, this.userForm, this.headers )
                 .then(res => {
                     this.res(res)
@@ -212,18 +228,18 @@
             // 更新用户信息
             updateUser() {
                 console.log(this.headers)
-                const url = window.$uriReq + '/user';
-                const token = localStorage.getItem('token');
+                const url = window.$uriReq + '/userservice/user';
                 axios.put(url, this.userForm, this.headers )
                 .then(res => {
                     this.res(res)
                 }).catch(error => {
+                    alert(error)
                     this.dialogVisible = false;
                 })
             },
             // 删除用户
             deleteUser() {
-                const url = window.$uriReq + '/user/'+this.userForm.id;
+                const url = window.$uriReq + '/userservice/user/'+this.userForm.id;
                 axios.delete(url,  this.headers)
                 .then(res => {
                     this.res(res)

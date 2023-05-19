@@ -1,15 +1,16 @@
 package com.fantuancx.user.controller;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.fantuancx.api.common.R;
 import com.fantuancx.user.pojo.User;
-import com.fantuancx.user.pojo.UserReq;
+import com.fantuancx.user.pojo.UsersPage;
 import com.fantuancx.user.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
@@ -27,15 +28,10 @@ public class UserController {
     }
 
     @GetMapping
-    public R<List<UserReq>> getUserList(){
+    public R<List<User>> getUserList(){
         log.info("查询用户信息！");
         List<User> users = userService.list();
-        List<UserReq> userReqs = new ArrayList<>();
-        for(User user : users){
-            // 格式化时间
-            userReqs.add(new UserReq(user));
-        }
-        return R.success(userReqs,"用户信息！");
+        return R.success(users,"用户信息！");
     }
 
     @PutMapping
@@ -88,5 +84,19 @@ public class UserController {
             return R.success("删除成功！");
         }
         return R.fail("删除失败！");
+    }
+
+    @GetMapping("pages/{current}")
+    public R<UsersPage> getUserByPage(@PathVariable Long current){
+        try {
+            IPage page = new Page(current,5);
+            userService.page(page,null);
+            UsersPage usersPage = new UsersPage();
+            usersPage.setUsers(page.getRecords());
+            usersPage.setPages(page.getPages());
+            return R.success(usersPage,"用户信息获取成功！");
+        } catch (Exception e) {
+            return R.fail("用户信息获取失败！");
+        }
     }
 }

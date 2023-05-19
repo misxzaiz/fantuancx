@@ -6,8 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="login-service" />
-        <module name="jwt-api" />
         <module name="user-service" />
         <module name="demo" />
         <module name="gateway" />
@@ -15,6 +13,10 @@
         <module name="markdown-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jwt-api" target="1.8" />
+      <module name="login-service" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

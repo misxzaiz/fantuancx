@@ -4,6 +4,8 @@
   }
   .el-menu {
     font-weight: bolder;
+    margin: 0;
+    padding: 0;
   }
   .el-menu-logo {
     font-size: x-large;
@@ -21,6 +23,7 @@
         <el-menu-item index="1-2" @click="logout">注销</el-menu-item>
         <el-menu-item index="1-3" @click="demo">Demo</el-menu-item>
         <el-menu-item index="1-4" @click="router('/controller')">控制台</el-menu-item>
+        <el-menu-item index="1-5" @click="trantoURL('/swagger-ui.html')">API</el-menu-item>
     </el-sub-menu>
 
 
@@ -43,9 +46,12 @@
         router(uri) {
             this.$router.push(uri)
         },
+        trantoURL(url){
+          window.location.href=window.$uriReq+url
+        },
         demo(){
           const token = localStorage.getItem('token')
-          axios.get(window.$uriReq+'/demo', {
+          axios.get(window.$uriReq+'/demoservice/demo', {
             headers: {
               'Authorization': `${token}`
             }

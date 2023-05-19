@@ -1,7 +1,5 @@
 <style>
-    .test {
-        background: transparent;
-    }
+
 </style>
 
 <template>

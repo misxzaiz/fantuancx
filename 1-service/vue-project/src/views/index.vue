@@ -1,5 +1,8 @@
 <style>
-
+  body {
+    background-color: #b2d4be;
+    margin: 0;
+  }
 </style>
 
 <template>

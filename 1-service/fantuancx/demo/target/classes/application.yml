@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: demo # 服务名称
+    name: demoservice # 服务名称
   cloud:
     nacos:
       discovery:

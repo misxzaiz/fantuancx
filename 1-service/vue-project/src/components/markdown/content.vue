@@ -41,7 +41,7 @@
         marked.use(mangle({mangle: false}));
         marked.use(gfmHeadingId({headerIds: false}));
         const token = localStorage.getItem('token')
-          axios.get(window.$uriReq+'/content/'+name, {
+          axios.get(window.$uriReq+'/markdownservice/content/'+name, {
             headers: {
               'Authorization': `${token}`
             }
