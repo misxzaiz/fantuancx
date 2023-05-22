@@ -1,0 +1,1 @@
+import{H as o}from"./Header-ca8c5708.js";import{_ as t,r,o as n,c as a,a as s}from"./index-cd361d80.js";const c={data(){return{}},mounted(){},methods:{},components:{Header:o}};function d(m,p,_,f,l,u){const e=r("Header");return n(),a("div",null,[s(e)])}const $=t(c,[["render",d]]);export{$ as default};

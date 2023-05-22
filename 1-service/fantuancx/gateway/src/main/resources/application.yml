@@ -28,3 +28,9 @@ spring:
             - Path=/markdownservice/**
           filters:
             - StripPrefix=1
+        - id: esservice
+          uri: lb://esservice
+          predicates:
+            - Path=/esservice/**
+          filters:
+            - StripPrefix=1

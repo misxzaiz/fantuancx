@@ -26,9 +26,11 @@ public class GatewayFilter implements GlobalFilter {
     private final String[] skipAuthUrls = new String[]{
             "/login",
             "/user/register",
+            "/content/**",
             "/**/v2/api-docs",
             "/**/swagger-ui.html",
-            "/**/swagger-resources/**"
+            "/**/swagger-resources/**",
+            "/hotel/**" // ES 测试
     };
 
     @Override

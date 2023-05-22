@@ -4,10 +4,14 @@
         margin: 1%;
     }
     .user-container {
-        margin: 1%;
+        margin: 0 0.5% 0 0.5%;
     }
     .user-nav {
-        margin: 1%;
+        margin: 0.5% 0 0.5% 0;
+    }
+    .user-pagination {
+        background-color: rgb(255, 255, 255);
+        padding: 0.5%;
     }
 </style>
 
@@ -17,7 +21,7 @@
     <div class="user-container">
         <!-- 添加/批量删除用户 -->
         <div class="user-nav">
-            <el-button @click="handleAdd()">添加用户</el-button>
+            <el-button type="primary" @click="handleAdd()">添加用户</el-button>
             <el-button type="danger"  @click="handleBatchDelete">批量删除</el-button>
         </div>
         <!-- 用户列表 -->
@@ -31,7 +35,7 @@
                 <el-table-column prop="avatar" label="头像" width="80">
                     <template #default="{row}">
                         <img v-if="row.avatar" :src="row.avatar" style="width: 50px; height: 50px;">
-                        <span v-else>无</span>
+                    
                     </template>
                 </el-table-column>
                 <el-table-column prop="createdAt" label="创建时间" />
@@ -44,7 +48,9 @@
                 </el-table-column>
             </el-table>
             <el-pagination 
-                layout="prev, pager, next"  
+                class="user-pagination"
+                layout="prev, pager, next, jumper"  
+                background 
                 :current-page="currentPage"
                 :page-count="pages" 
                 @current-change="getCurrentPage"
@@ -91,8 +97,8 @@
         data() {
             return {
                 users: [],
-                currentPage: 1,
-                pages: 100,
+                currentPage: 1, // 当前页
+                pages: 100, // 总页数
                 dialogVisible: false,
                 dialogTitle: '',
                 userForm: {},

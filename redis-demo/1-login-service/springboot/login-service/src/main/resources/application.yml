@@ -1,0 +1,10 @@
+server:
+  port: 8081
+
+spring:
+  redis:
+    host: 8.130.73.113
+    port: 6379
+    database: 0
+    password: 1234
+    timeout: 5000

@@ -3,6 +3,7 @@
 </style>
 
 <template>
+    
     <Header></Header>
     <el-row :gutter="20">
         <el-col :span="4"></el-col>
@@ -16,19 +17,22 @@
 
     import Header from '../header/header.vue'
     import Content from './content.vue'
-    
-
 
     export default {
 
         data() {
             return {
-                name: this.$route.query.name
+                name: this.$route.query.name,
+ 
             };
         },
         components: {
             Header,
-            Content
+            Content,
+        },
+        mounted() {
+
         }
     };
+
 </script>
