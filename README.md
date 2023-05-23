@@ -1,6 +1,17 @@
 # fantuancx
 
-# 一、登录
+# 组成
 
-[(97条消息) 【项目实战】Spring Cloud Gateway 实现JWT / Token登录认证流程_架构攻城之路的博客-CSDN博客](https://blog.csdn.net/a1036645146/article/details/109546416)
+## spring-cloud-demo：springcloud 使用示例
 
+- 1-gateway-swagger：Gateway 和 Swagger 整合示例（含 vue 前端）
+- 2-elasticsearch-rabbitmq：ES 和 RQ 整合示例（含 vue 前端）
+
+## redis-demo：redis 使用实例
+
+- 1-login-service：使用 redis 缓存 token 实现登录（含 vue 前端）
+
+## microservice-deno：微服务项目测试
+
+- fantuancx：后端代码
+- vue-project：前端页面
