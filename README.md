@@ -2,10 +2,13 @@
 
 # 组成
 
+## springboot-demo
+
+- 基于 ES 的酒店搜索项目：使用 elasticsearch 实现对酒店信息的查询，使用 rabbitmq 对酒店信息进行同步管理。
+
 ## spring-cloud-demo：springcloud 使用示例
 
 - 1-gateway-swagger：Gateway 和 Swagger 整合示例（含 vue 前端）
-- 2-elasticsearch-rabbitmq：ES 和 RQ 整合示例（含 vue 前端）
 
 ## redis-demo：redis 使用实例
 
