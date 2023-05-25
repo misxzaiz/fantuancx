@@ -1,0 +1,12 @@
+spring:
+  redis:
+    host: 8.130.73.113
+    port: 6379
+    password: 1234
+    database: 1 # 数据库
+    lettuce: # 选择 jedis 或 lettuce ，使用 jedis 要额外引入 jedis 的依赖
+      pool:
+        max-active: 8  #最大连接
+        max-idle: 8   #最大空闲连接
+        min-idle: 0   #最小空闲连接
+        max-wait: 100ms #连接等待时间
