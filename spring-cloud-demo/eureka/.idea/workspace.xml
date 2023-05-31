@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9f9ccf98-21f5-40f0-92e3-edcc280e6c99" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/../4-eureka/eureka/client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../4-eureka/eureka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../4-eureka/eureka/server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/contrib/README" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/contrib/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/contrib/unicode2nginx/koi-utf" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/contrib/unicode2nginx/koi-utf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/contrib/unicode2nginx/unicode-to-nginx.pl" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/contrib/unicode2nginx/unicode-to-nginx.pl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/contrib/unicode2nginx/win-utf" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/contrib/unicode2nginx/win-utf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/contrib/vim/ftdetect/nginx.vim" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/contrib/vim/ftdetect/nginx.vim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/contrib/vim/ftplugin/nginx.vim" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/contrib/vim/ftplugin/nginx.vim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/contrib/vim/indent/nginx.vim" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/contrib/vim/indent/nginx.vim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/contrib/vim/syntax/nginx.vim" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/contrib/vim/syntax/nginx.vim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/docs/CHANGES" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/docs/CHANGES" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/docs/CHANGES.ru" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/docs/CHANGES.ru" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/docs/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/docs/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/docs/OpenSSL.LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/docs/OpenSSL.LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/docs/PCRE.LICENCE" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/docs/PCRE.LICENCE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/docs/README" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/docs/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/docs/zlib.LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/docs/zlib.LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/html/50x.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/html/50x.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/logs/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/logs/access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/logs/nginx.pid" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/nginx-1.18.0/logs/nginx.pid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/redis-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/redis-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/src/main/java/org/example/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/src/main/java/org/example/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/RedisApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/RedisApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/config/loginConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/config/loginConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/dto/LoginFormDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/dto/LoginFormDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/dto/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/dto/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/dto/UserDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/entity/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/entity/UserInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/interceptor/LoginInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/mapper/UserInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/mapper/UserInfoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/service/IUserInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/service/IUserInfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/service/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/service/impl/UserInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/service/impl/UserInfoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/utils/RedisConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/utils/RedisConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/utils/RegexPatterns.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/utils/RegexPatterns.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/utils/RegexUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/utils/RegexUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/utils/UserHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../redis-demo/3-heima-demo/redis-service/target/classes/org/example/utils/UserHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4-zookeeper/zookeeper.md" beforeDir="false" afterPath="$PROJECT_DIR$/../4-zookeeper/zookeeper.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2QY8hz2FK3NOVSyufT7VW4yoM6B" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-1.8",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.ServerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ServerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="9f9ccf98-21f5-40f0-92e3-edcc280e6c99" name="变更" comment="" />
+      <created>1685519280525</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685519280525</updated>
+      <workItem from="1685519282076" duration="1990000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

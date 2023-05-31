@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: client-service # 服务名称
+eureka:
+  client:
+    service-url: # eureka 地址
+      defaultZaon: http://127.0.0.1:8081/eureka/
